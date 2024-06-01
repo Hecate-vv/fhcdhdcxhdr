@@ -7,6 +7,7 @@ import javafx.scene.layout.VBox;
 import javafx.stage.DirectoryChooser;
 import javafx.stage.Stage;
 import java.io.File;
+import javafx.scene.control.TextArea;
 
 public class Main extends Application {
     private TextField directoryPathField;
@@ -33,6 +34,8 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
 
+        resultArea = new TextArea();
+        resultArea.setPrefHeight(400);
     }
 
     private void browseDirectory() {
